@@ -36,7 +36,7 @@ function getListTeams() {
             contents.innerHTML = '<ul class="collection">' + teams + '</ul>'
             resJson.teams.forEach(team => {
                 document.getElementById(`getId${team.id}`).addEventListener('click', function () {
-                    showTeamInfo(this.dataset.id);
+                    getDetailTeam(this.dataset.id);
                 });
             });
         }).catch(err => {
