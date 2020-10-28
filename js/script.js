@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loadPage(page);
 })
 
-    function showTeamInfo(id) {
+    function getDetailTeam(id) {
         title.innerHTML = "Detail Team";
         let url = baseUrl + "teams/" + id;
         fetch(url, fetchHeader)
